@@ -1,0 +1,42 @@
+---
+abstract: 'Tickit Widget for Number.'
+author:
+  - 'Michal Josef Spacek <skim@cpan.org>'
+build_requires:
+  Cwd: 0
+  English: 0
+  ExtUtils::MakeMaker: 6.59
+  File::Spec::Functions: 0
+  FindBin: 0
+  IO::CaptureOutput: 1.02
+  Test::More: 0
+  Test::NoWarnings: 0
+configure_requires:
+  ExtUtils::MakeMaker: 6.59
+distribution_type: module
+dynamic_config: 1
+generated_by: 'Module::Install version 1.19'
+license: bsd
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Tickit-Widget-Number
+no_index:
+  directory:
+    - inc
+    - t
+    - xt
+requires:
+  Cwd: 0
+  English: 0
+  Error::Pure::Output::Text: 0.21
+  Exporter: 0
+  List::MoreUtils: 0
+  Readonly: 0
+  perl: 5.8.0
+resources:
+  bugtracker: https://github.com/michal-josef-spacek/Tickit-Widget-Number/issues
+  homepage: https://github.com/michal-josef-spacek/Tickit-Widget-Number
+  license: http://opensource.org/licenses/bsd-license.php
+  repository: git://github.com/michal-josef-spacek/Tickit-Widget-Number
+version: '0.01'
