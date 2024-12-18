@@ -1,0 +1,104 @@
+NAME
+    Tickit::Widget::Number - Create and manipulate number widgets.
+
+SYNOPSIS
+     use Tickit;
+     use Tickit::Widget::Number;
+
+     my $number = Tickit::Widget::Number->new(
+             'number' => 7,
+     );
+     Tickit->new('root' => $number)->run;
+
+DESCRIPTION
+    This is a widget that shows a number in graphic form. Minimal size of
+    widget is 6x5.
+
+METHODS
+  "new"
+     my $obj = Tickit::Widget::Number->new(%params);
+
+    Constructor.
+
+    Widget uses parameters from Tickit::Widget.
+
+   Specific parameters for this Widget
+    *       "fill_char"
+
+            Fill character.
+
+            Default value is '█'.
+
+    *       "number"
+
+            Number to view.
+
+            Default value is 0.
+
+  "cols"
+    Number of columns.
+
+    Returns 6.
+
+  "rows"
+    Number of rows.
+
+    Returns 5.
+
+  "render_to_rb"
+    Render the number.
+
+    Returns undef.
+
+EXAMPLE
+     use strict;
+     use warnings;
+
+     use Tickit;
+     use Tickit::Widget::Number;
+
+     # Number widget.
+     my $number = Tickit::Widget::Number->new(
+             'number' => 5,
+     );
+ 
+     # Loop.
+     Tickit->new('root' => $number)->run;
+
+     # Output like:
+     # ██████
+     # ██
+     # ██████
+     #     ██
+     # ██████
+
+DEPENDENCIES
+    Class::Utils, Tickit::Widget, Readonly, Unicode::UTF8.
+
+SEE ALSO
+    Curses::UI::Number
+        Create and manipulate number widgets.
+
+REPOSITORY
+    <https://github.com/michal-josef-spacek/Tickit-Widget-Number>
+
+AUTHOR
+    Michal Josef Špaček <mailto:skim@cpan.org>
+
+    <http://skim.cz>
+
+LICENSE AND COPYRIGHT
+    © 2020-2024 Michal Josef Špaček
+
+    BSD 2-Clause License
+
+VERSION
+    0.01
+
+POD ERRORS
+    Hey! The above document had some coding errors, which are explained
+    below:
+
+    Around line 155:
+        You forgot a '=back' before '=head2'
+

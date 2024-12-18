@@ -103,3 +103,135 @@ sub _text {
 1;
 
 __END__
+
+=pod
+
+=encoding utf8
+
+=head1 NAME
+
+Tickit::Widget::Number - Create and manipulate number widgets.
+
+=head1 SYNOPSIS
+
+ use Tickit;
+ use Tickit::Widget::Number;
+
+ my $number = Tickit::Widget::Number->new(
+         'number' => 7,
+ );
+ Tickit->new('root' => $number)->run;
+
+=head1 DESCRIPTION
+
+This is a widget that shows a number in graphic form. Minimal size of widget is 6x5.
+
+=head1 METHODS
+
+=head2 C<new>
+
+ my $obj = Tickit::Widget::Number->new(%params);
+
+Constructor.
+
+Widget uses parameters from L<Tickit::Widget>.
+
+=head3 Specific parameters for this Widget
+
+=over 8
+
+=item * C<fill_char>
+
+Fill character.
+
+Default value is '█'.
+
+=item * C<number>
+
+Number to view.
+
+Default value is 0.
+
+=back
+
+=head2 C<cols>
+
+Number of columns.
+
+Returns 6.
+
+=head2 C<lines>
+
+Number of lines.
+
+Returns 5.
+
+=head2 C<render_to_rb>
+
+Render the number.
+
+Returns undef.
+
+=head1 EXAMPLE
+
+=for comment filename=tickit_widget_five.pl
+
+ use strict;
+ use warnings;
+
+ use Tickit;
+ use Tickit::Widget::Number;
+
+ # Number widget.
+ my $number = Tickit::Widget::Number->new(
+         'number' => 5,
+ );
+ 
+ # Loop.
+ Tickit->new('root' => $number)->run;
+
+ # Output like:
+ # ██████
+ # ██
+ # ██████
+ #     ██
+ # ██████
+
+=head1 DEPENDENCIES
+
+L<Class::Utils>,
+L<Tickit::Widget>,
+L<Readonly>,
+L<Unicode::UTF8>.
+
+=head1 SEE ALSO
+
+=over
+
+=item L<Curses::UI::Number>
+
+Create and manipulate number widgets.
+
+=back
+
+=head1 REPOSITORY
+
+L<https://github.com/michal-josef-spacek/Tickit-Widget-Number>
+
+=head1 AUTHOR
+
+Michal Josef Špaček L<mailto:skim@cpan.org>
+
+L<http://skim.cz>
+
+=head1 LICENSE AND COPYRIGHT
+
+© 2020-2024 Michal Josef Špaček
+
+BSD 2-Clause License
+
+=head1 VERSION
+
+0.01
+
+=cut
