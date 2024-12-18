@@ -40,8 +40,8 @@ METHODS
 
     Returns 6.
 
-  "rows"
-    Number of rows.
+  "lines"
+    Number of lines.
 
     Returns 5.
 
@@ -94,11 +94,4 @@ LICENSE AND COPYRIGHT
 
 VERSION
     0.01
-
-POD ERRORS
-    Hey! The above document had some coding errors, which are explained
-    below:
-
-    Around line 155:
-        You forgot a '=back' before '=head2'
 
