@@ -110,7 +110,7 @@ __END__
 
 =head1 NAME
 
-Tickit::Widget::Number - Create and manipulate number widgets.
+Tickit::Widget::Number - Tickit Widget for number.
 
 =head1 SYNOPSIS
 
