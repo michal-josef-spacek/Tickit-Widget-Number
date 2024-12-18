@@ -1,6 +1,5 @@
 TODO
 ====
-1. Zavislosti
 2. Testy?
 3. Implement border like Curses::UI::Number
 4. Implement more numbers like "45".
@@ -9,3 +8,5 @@ TODO
 
 Applied
 =======
+1. Zavislosti
+OK [20241218] skim
