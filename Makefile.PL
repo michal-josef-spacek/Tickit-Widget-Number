@@ -5,7 +5,7 @@ use warnings;
 use inc::Module::Install;
 
 # Definition.
-abstract 'Tickit Widget for number.';
+abstract 'Tickit Widget for number';
 author 'Michal Josef Spacek <skim@cpan.org>';
 author_requires 'Cwd' => 0;
 author_requires 'English' => 0;

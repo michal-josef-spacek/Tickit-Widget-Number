@@ -1,5 +1,5 @@
 ---
-abstract: 'Tickit Widget for number.'
+abstract: 'Tickit Widget for number'
 author:
   - 'Michal Josef Spacek <skim@cpan.org>'
 build_requires:
