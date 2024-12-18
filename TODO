@@ -3,7 +3,8 @@ TODO
 2. Testy?
 3. Implement border like Curses::UI::Number
 7. Example #2 from Curses::UI::Number.
-8.
+8. Fix CI with libtickit.
+9.
 
 Applied
 =======
