@@ -4,7 +4,8 @@ TODO
 3. Implement border like Curses::UI::Number
 7. Example #2 from Curses::UI::Number.
 8. Fix CI with libtickit.
-9.
+9. Use style for print of number?
+10.
 
 Applied
 =======
